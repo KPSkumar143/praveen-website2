@@ -1,60 +1,80 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Praveen Kumar | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Praveen Kumar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>PK THE DARK KPS</h1>
-        <p>Artificial intelligence and data Student | Tech MONSTER</p>
-    </header>
+  <header>
+    <h1>PK THE DARK KPS</h1>
+    <p>Artificial intelligence and data Student | Tech MONSTER</p>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Praveen, a passionate B.Arch student exploring design, AI tools, and creative tech solutions.</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Praveen, a passionate B.Arch student exploring design, AI tools, and creative tech solutions.</p>
+  </section>
 
-    <section id="projects">
-        <h2>Projects & Portfolio</h2>
-        <ul>
-            <li>📐 Architecture Design Concepts</li>
-            <li>🎥 AI-Powered Movie Recommender System</li>
-            <li>🧠 Smart Traffic Accident Prediction (AI Project)</li>
-        </ul>
-    </section>
+  <section id="projects">
+    <h2>Projects & Portfolio</h2>
+    <ul>
+      <li>📐 Architecture Design Concepts</li>
+      <li>🎥 AI-Powered Movie Recommender System</li>
+      <li>🧠 Smart Traffic Accident Prediction (AI Project)</li>
+    </ul>
+  </section>
 
-    <section id="ai-tool">
-        <h2>Try My AI Movie Recommender</h2>
-        <iframe src="https://easy-peasy.ai/templates/movie-recommender" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
-    </section>
+  <section id="ai-tool">
+    <h2>Try My AI Movie Recommender</h2>
+    <iframe src="https://easy-peasy.ai/templates/movie-recommender" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+  </section>
 
-    <section id="blog">
-        <h2>Blog & Articles</h2>
-        <p>Coming soon: thoughts on AI in architecture, digital design workflows, and productivity tools.</p>
-    </section>
+  <section id="blog">
+    <h2>Blog & Articles</h2>
+    <p>Coming soon: thoughts on AI in architecture, digital design workflows, and productivity tools.</p>
+  </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/mzzvrpkp" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+  <!-- 💻 Login Section -->
+  <section id="login">
+    <h2>Login</h2>
+    <div class="login-container">
+      <div id="gear" class="gear"></div>
+      <div id="hand" class="hand"></div>
 
-    <footer>
-        <h3>Connect with me</h3>
-        <p>
-            <a href="https://www.instagram.com/pk_the_darkphoenix" target="_blank">Instagram</a> |
-            <a href="https://www.linkedin.com/in/praveen-kumar-034274309" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/KPSkumar143" target="_blank">GitHub</a>
-        </p>
-        <p>© 2025 Praveen Kumar</p>
-    </footer>
+      <form id="loginForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <label class="checkbox-label">
+          <input type="checkbox" id="agree" />
+          Agree to whatever
+        </label>
+        <button type="submit" id="submitBtn" disabled>Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mzzvrpkp" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <h3>Connect with me</h3>
+    <p>
+      <a href="https://www.instagram.com/pk_the_darkphoenix" target="_blank">Instagram</a> |
+      <a href="https://www.linkedin.com/in/praveen-kumar-034274309" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/KPSkumar143" target="_blank">GitHub</a>
+    </p>
+    <p>© 2025 Praveen Kumar</p>
+  </footer>
+
+  <script src="login.js"></script>
 </body>
 </html>
