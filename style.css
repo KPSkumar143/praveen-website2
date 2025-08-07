@@ -56,3 +56,59 @@ button {
   margin: 0 auto 20px;
   transition: transform 0.4s ease-in-out;
 }
+
+.neon-box {
+    background: #111;
+    color: #0ff;
+    border: 2px solid #0ff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #0ff;
+    text-align: center;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 600px;
+}
+
+.login-container input,
+.login-container button {
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    display: block;
+    background: #000;
+    color: #0ff;
+    box-shadow: 0 0 8px #0ff;
+}
+
+.login-container button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.checkbox-label {
+    font-size: 14px;
+    color: #0ff;
+}
+
+.gear {
+    width: 40px;
+    height: 40px;
+    border: 6px solid #0ff;
+    border-radius: 50%;
+    margin: 10px auto;
+    transition: transform 1s ease-in-out;
+}
+
+.hand {
+    width: 30px;
+    height: 30px;
+    background-color: #0ff;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+
