@@ -36,24 +36,26 @@
     <p>Coming soon: thoughts on AI in architecture, digital design workflows, and productivity tools.</p>
   </section>
 
-  <!-- 💻 Login Section -->
-  <section id="login">
-    <h2>Login</h2>
-    <div class="login-container">
-      <div id="gear" class="gear"></div>
-      <div id="hand" class="hand"></div>
+  <!-- Login Section -->
+<section id="login" class="neon-box">
+  <h2>Login Zone (Animated)</h2>
+  <div class="login-container">
+    <div id="gear" class="gear"></div>
+    <div id="hand" class="hand"></div>
 
-      <form id="loginForm">
-        <input type="text" id="name" placeholder="Name" required />
-        <input type="email" id="email" placeholder="Email" required />
-        <label class="checkbox-label">
-          <input type="checkbox" id="agree" />
-          Agree to whatever
-        </label>
-        <button type="submit" id="submitBtn" disabled>Submit</button>
-      </form>
-    </div>
-  </section>
+    <form id="loginForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+
+      <label class="checkbox-label">
+        <input type="checkbox" id="agree" /> Agree to whatever
+      </label>
+
+      <button type="submit" id="submitBtn" disabled>Submit</button>
+    </form>
+  </div>
+</section>
+
 
   <section id="contact">
     <h2>Contact Me</h2>
@@ -76,5 +78,33 @@
   </footer>
 
   <script src="login.js"></script>
+  <script>
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const agreeCheckbox = document.getElementById("agree");
+  const submitBtn = document.getElementById("submitBtn");
+  const gear = document.getElementById("gear");
+  const hand = document.getElementById("hand");
+  const form = document.getElementById("loginForm");
+
+  nameInput.addEventListener("input", () => {
+    gear.style.transform = "rotate(360deg)";
+    setTimeout(() => gear.style.transform = "rotate(0deg)", 1000);
+
+    hand.style.transform = "translateY(30px)";
+    setTimeout(() => hand.style.transform = "translateY(0)", 400);
+
+    agreeCheckbox.checked = true;
+    submitBtn.disabled = false;
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const name = nameInput.value;
+    const email = emailInput.value;
+    alert(`Logged in as ${name} (${email})`);
+  });
+</script>
+
 </body>
 </html>
